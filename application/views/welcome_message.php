@@ -11,67 +11,97 @@
 
 	<title>Selamat Datang Di Website Resmi SMK Tunas Harapan Jakarta Barat</title>
 	<link rel="icon" href="https://smkth-jakbar.com/assets/images/logo.png">
+
+	<style>
+		/* Small, focused CSS to improve mobile layout and avoid horizontal scroll */
+		html,
+		body {
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			padding: 12px 8px;
+			background: #f8f9fa;
+		}
+
+		.page-header .card {
+			border-radius: 0.5rem;
+		}
+
+		.card {
+			margin-bottom: 12px;
+		}
+
+		.card-title {
+			margin-bottom: 10px;
+		}
+
+		/* Make action buttons full-width on small screens */
+		@media (max-width: 575.98px) {
+			.btn-block-sm {
+				display: block;
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body>
-	<div class="row">
-		<div class="col-md">
-			<div class="card bg-primary text-white">
-				<div class="card-body">
-					<h3 class="text-center font-weight-bolder text-uppercase mt-3">jurusan</h3>
+	<div class="container">
+		<!-- Header in a container to prevent negative row margins causing horizontal scroll -->
+		<div class="row page-header mb-3">
+			<div class="col-12">
+				<div class="card bg-primary text-white">
+					<div class="card-body text-center">
+						<h3 class="font-weight-bolder text-uppercase mb-0">Jurusan</h3>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
+
+		<!-- Cards: use responsive columns so they stack neatly on mobile -->
 		<div class="row">
-			<div class="col-md mt-4">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
-					<div class="card-body">
-						<h4 class="text-center text-uppercase font-weight-bolder">akl</h4>
-						<h4 class="text-uppercase font-weigt-bolder text-center">
-							<a class="btn btn-primary btn-sm" href="http://103.103.23.240/cbt2.5/">PILIH</a>
-						</h4>
+					<div class="card-body text-center">
+						<h5 class="card-title text-uppercase font-weight-bolder">AKL</h5>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md mt-4">
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
-					<div class="card-body">
-						<h4 class="text-center text-uppercase font-weight-bolder">mplb</h4>
-						<h4 class="text-uppercase font-weigt-bolder text-center">
-							<a class="btn btn-primary btn-sm" href="http://103.103.23.240/cbt2.5/">PILIH</a>
-						</h4>
+					<div class="card-body text-center">
+						<h5 class="card-title text-uppercase font-weight-bolder">MPLB</h5>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md mt-4">
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
-					<div class="card-body">
-						<h4 class="text-center text-uppercase font-weight-bolder">pm</h4>
-						<h4 class="text-uppercase font-weigt-bolder text-center">
-							<a class="btn btn-primary btn-sm" href="http://103.103.23.240/cbt2.5/">PILIH</a>
-						</h4>
+					<div class="card-body text-center">
+						<h5 class="card-title text-uppercase font-weight-bolder">PM</h5>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md mt-4">
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
-					<div class="card-body">
-						<h4 class="text-center text-uppercase font-weight-bolder">tjkt</h4>
-						<h4 class="text-uppercase font-weigt-bolder text-center">
-							<a class="btn btn-primary btn-sm" href="http://103.103.23.240/cbt2.5/">PILIH</a>
-						</h4>
+					<div class="card-body text-center">
+						<h5 class="card-title text-uppercase font-weight-bolder">TJKT</h5>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md mt-4">
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
-					<div class="card-body">
-						<h4 class="text-center text-uppercase font-weight-bolder">dkv</h4>
-						<h4 class="text-uppercase font-weigt-bolder text-center">
-							<a class="btn btn-primary btn-sm" href="http://103.103.23.240/cbt2.5/">PILIH</a>
-						</h4>
+					<div class="card-body text-center">
+						<h5 class="card-title text-uppercase font-weight-bolder">DKV</h5>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
 					</div>
 				</div>
 			</div>

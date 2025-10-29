@@ -332,6 +332,15 @@ $config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
+| External service URLs (project-specific)
+|--------------------------------------------------------------------------
+| Keep external endpoints configurable so views/controllers don't hard-code
+| remote addresses. Example used by `application/views/welcome_message.php`.
+*/
+$config['cbt_url'] = 'http://103.103.23.240/cbt2.5/';
+
+/*
+|--------------------------------------------------------------------------
 | Session Variables
 |--------------------------------------------------------------------------
 |

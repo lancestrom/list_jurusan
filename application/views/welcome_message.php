@@ -9,7 +9,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-	<title>Selamat Datang Di Website Resmi SMK Tunas Harapan Jakarta Barat</title>
+	<title>CBT SMK TH</title>
 	<link rel="icon" href="https://smkth-jakbar.com/assets/images/logo.png">
 
 	<style>
@@ -65,7 +65,7 @@
 				<div class="card">
 					<div class="card-body text-center">
 						<h5 class="card-title text-uppercase font-weight-bolder">AKL</h5>
-						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_akl">PILIH</a>
 					</div>
 				</div>
 			</div>
@@ -74,7 +74,7 @@
 				<div class="card">
 					<div class="card-body text-center">
 						<h5 class="card-title text-uppercase font-weight-bolder">MPLB</h5>
-						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
+						<a class=" btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_mplb">PILIH</a>
 					</div>
 				</div>
 			</div>
@@ -82,8 +82,8 @@
 			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
 					<div class="card-body text-center">
-						<h5 class="card-title text-uppercase font-weight-bolder">PM</h5>
-						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
+						<h5 class="card-title text-uppercase font-weight-bolder">PM DKV</h5>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_pm_dkv">PILIH</a>
 					</div>
 				</div>
 			</div>
@@ -92,16 +92,7 @@
 				<div class="card">
 					<div class="card-body text-center">
 						<h5 class="card-title text-uppercase font-weight-bolder">TJKT</h5>
-						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-				<div class="card">
-					<div class="card-body text-center">
-						<h5 class="card-title text-uppercase font-weight-bolder">DKV</h5>
-						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?php echo config_item('cbt_url'); ?>">PILIH</a>
+						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_tjkt">PILIH</a>
 					</div>
 				</div>
 			</div>

@@ -1,25 +1,72 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends CI_Controller
+{
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/userguide3/general/urls.html
-	 */
+
 	public function index()
 	{
 		$this->load->view('welcome_message');
+	}
+
+	public function list_kelas_akl()
+	{
+		$this->load->view('tampilan_akl');
+	}
+
+	public function list_kelas_akl_x()
+	{
+		$this->load->view('tampilan_akl_x');
+	}
+	public function list_kelas_akl_xi()
+	{
+		$this->load->view('tampilan_akl_xi');
+	}
+	public function list_kelas_akl_xii()
+	{
+		$this->load->view('tampilan_akl_xii');
+	}
+
+	public function list_kelas_mplb()
+	{
+		$this->load->view('tampilan_mplbl');
+	}
+
+	public function list_kelas_mplb_x()
+	{
+		$this->load->view('tampilan_mplbl_x');
+	}
+
+	public function list_kelas_mplb_xi()
+	{
+		$this->load->view('tampilan_mplbl_xi');
+	}
+
+	public function list_kelas_mplb_xii()
+	{
+		$this->load->view('tampilan_mplbl_xii');
+	}
+
+	public function list_kelas_pm_dkv()
+	{
+		$this->load->view('tampilan_pm_dkv');
+	}
+
+	public function list_kelas_tjkt()
+	{
+		$this->load->view('tampilan_tjkt');
+	}
+	public function list_kelas_tjkt_x()
+	{
+		$this->load->view('tampilan_tjkt_x');
+	}
+	public function list_kelas_tjkt_xi()
+	{
+		$this->load->view('tampilan_tjkt_xi');
+	}
+	public function list_kelas_tjkt_xii()
+	{
+		$this->load->view('tampilan_tjkt_xii');
 	}
 }

@@ -28,7 +28,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 // $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 
 
-$config['base_url'] = 'http://project.cbt.smkth-jakbar.com/';
+$config['base_url'] = 'http://project.cbt.smkth-jakbar.com/list_jurusan/';
 
 /*
 |--------------------------------------------------------------------------

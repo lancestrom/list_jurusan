@@ -65,7 +65,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">X TJKT</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://project.cbt.smkth-jakbar.com">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://project.cbt.smkth-jakbar.com/cbt2.0client">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XI TJKT</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://project.cbt.smkth-jakbar.com/">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://project.cbt.smkth-jakbar.com/cbt2.0client">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XII TJKT</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://project.cbt.smkth-jakbar.com/">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://project.cbt.smkth-jakbar.com/cbt2.0client">PILIH</a>
                     </div>
                 </div>
             </div>

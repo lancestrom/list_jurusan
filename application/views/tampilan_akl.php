@@ -65,7 +65,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">X AKL</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155/login/index.phpt">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XI AKL</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155/login/index.php">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="hhttp://129.212.230.155">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XII AKL</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155/login/index.php">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155">PILIH</a>
                     </div>
                 </div>
             </div>

@@ -65,7 +65,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">X PM DKV</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://143.198.85.185">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XI PM DKV</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://143.198.85.185">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XII PM DKV</h5>
-                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://129.212.230.155">PILIH</a>
+                        <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://143.198.85.185">PILIH</a>
                     </div>
                 </div>
             </div>

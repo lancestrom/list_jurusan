@@ -53,7 +53,7 @@
             <div class="col-12">
                 <div class="card bg-primary text-white">
                     <div class="card-body text-center">
-                        <h3 class="font-weight-bolder text-uppercase mb-0">Jurusan MPLB</h3>
+                        <h3 class="font-weight-bolder text-uppercase mb-0">Jurusan DKV</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase font-weight-bolder">X MPLB</h5>
+                        <h5 class="card-title text-uppercase font-weight-bolder">X DKV</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://143.198.209.98">PILIH</a>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase font-weight-bolder">XI MPLB</h5>
+                        <h5 class="card-title text-uppercase font-weight-bolder">XI DKV</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://167.99.65.169">PILIH</a>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase font-weight-bolder">XII MPLB</h5>
+                        <h5 class="card-title text-uppercase font-weight-bolder">XII DKV</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm" href="http://178.128.214.14">PILIH</a>
                     </div>
                 </div>

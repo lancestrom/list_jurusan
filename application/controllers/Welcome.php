@@ -29,4 +29,9 @@ class Welcome extends CI_Controller
 	{
 		$this->load->view('tampilan_tjkt');
 	}
+
+	public function list_kelas_dkv()
+	{
+		$this->load->view('tampilan_dkv');
+	}
 }

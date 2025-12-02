@@ -82,7 +82,7 @@
 			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card">
 					<div class="card-body text-center">
-						<h5 class="card-title text-uppercase font-weight-bolder">PM DKV</h5>
+						<h5 class="card-title text-uppercase font-weight-bolder">PM</h5>
 						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_pm_dkv">PILIH</a>
 					</div>
 				</div>
@@ -94,6 +94,14 @@
 						<h5 class="card-title text-uppercase font-weight-bolder">TJKT</h5>
 						<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_tjkt">PILIH</a>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<div class="card-body text-center">
+					<h5 class="card-title text-uppercase font-weight-bolder">DKV</h5>
+					<a class="btn btn-primary btn-sm btn-block btn-block-sm" href="<?= base_url()  ?>Welcome/list_kelas_dkv">PILIH</a>
 				</div>
 			</div>
 		</div>

@@ -67,7 +67,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">X AKL</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="https://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XI AKL</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="https://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XII AKL</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="https://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
                     </div>
                 </div>
             </div>

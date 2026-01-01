@@ -14,36 +14,36 @@
     <link rel="icon" href="https://smkth-jakbar.com/assets/images/logo.png">
 
     <style>
-        /* Small, focused CSS to improve mobile layout and avoid horizontal scroll */
-        html,
-        body {
-            -webkit-text-size-adjust: 100%;
-        }
+    /* Small, focused CSS to improve mobile layout and avoid horizontal scroll */
+    html,
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
 
-        body {
-            padding: 12px 8px;
-            background: #f8f9fa;
-        }
+    body {
+        padding: 12px 8px;
+        background: #f8f9fa;
+    }
 
-        .page-header .card {
-            border-radius: 0.5rem;
-        }
+    .page-header .card {
+        border-radius: 0.5rem;
+    }
 
-        .card {
-            margin-bottom: 12px;
-        }
+    .card {
+        margin-bottom: 12px;
+    }
 
-        .card-title {
-            margin-bottom: 10px;
-        }
+    .card-title {
+        margin-bottom: 10px;
+    }
 
-        /* Make action buttons full-width on small screens */
-        @media (max-width: 575.98px) {
-            .btn-block-sm {
-                display: block;
-                width: 100%;
-            }
+    /* Make action buttons full-width on small screens */
+    @media (max-width: 575.98px) {
+        .btn-block-sm {
+            display: block;
+            width: 100%;
         }
+    }
     </style>
 </head>
 
@@ -67,7 +67,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">X TJKT</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="https://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XI TJKT</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="https://project.cbt.smkth-jakbar.com/dashboard/1">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/dashboard/1">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XII TJKT</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="https://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
                     </div>
                 </div>
             </div>

@@ -14,36 +14,36 @@
     <link rel="icon" href="https://smkth-jakbar.com/assets/images/logo.png">
 
     <style>
-    /* Small, focused CSS to improve mobile layout and avoid horizontal scroll */
-    html,
-    body {
-        -webkit-text-size-adjust: 100%;
-    }
-
-    body {
-        padding: 12px 8px;
-        background: #f8f9fa;
-    }
-
-    .page-header .card {
-        border-radius: 0.5rem;
-    }
-
-    .card {
-        margin-bottom: 12px;
-    }
-
-    .card-title {
-        margin-bottom: 10px;
-    }
-
-    /* Make action buttons full-width on small screens */
-    @media (max-width: 575.98px) {
-        .btn-block-sm {
-            display: block;
-            width: 100%;
+        /* Small, focused CSS to improve mobile layout and avoid horizontal scroll */
+        html,
+        body {
+            -webkit-text-size-adjust: 100%;
         }
-    }
+
+        body {
+            padding: 12px 8px;
+            background: #f8f9fa;
+        }
+
+        .page-header .card {
+            border-radius: 0.5rem;
+        }
+
+        .card {
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            margin-bottom: 10px;
+        }
+
+        /* Make action buttons full-width on small screens */
+        @media (max-width: 575.98px) {
+            .btn-block-sm {
+                display: block;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -67,7 +67,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">X AKL</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/cbt2.5/">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XI AKL</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/cbt2.5/">PILIH</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title text-uppercase font-weight-bolder">XII AKL</h5>
                         <a class="btn btn-primary btn-sm btn-block btn-block-sm"
-                            href="http://project.cbt.smkth-jakbar.com/dashboard/">PILIH</a>
+                            href="http://project.cbt.smkth-jakbar.com/cbt2.5/">PILIH</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,152 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Dashboard_siswa extends MY_Controller
+{
+
+
+    public function index()
+    {
+        $this->require_login();
+        $this->Model_keamanan->getKeamanan();
+        $sess = $this->session->userdata('username');
+
+
+        // $cek = $this->Model_ujian->cek_mepel_user($sess);
+
+        $jadwal = date('Y-m-d');
+        $waktu =  date('H:i:s');
+        $isi['siswa'] = $this->Model_siswa->dataSiswaID($sess);
+        $isi['ujian'] = $this->Model_ujian->data_jadwal_siswa($sess, $jadwal, $waktu);
+
+        $this->load->view('Siswa/templates/header');
+        $this->load->view('Siswa/tampilan_siswa', $isi);
+        $this->load->view('Siswa/templates/footer');
+    }
+
+    public function detail_soal($id_jadwal)
+    {
+        $this->require_login();
+        $this->Model_keamanan->getKeamanan();
+
+        $sess = $this->session->userdata('username');
+
+        $benar = "";
+        $isi['siswa'] = $this->Model_siswa->dataSiswaID($sess);
+        // $isi['soal'] = $this->Model_ujian->soal_ujian_id_username($id_jadwal, $sess);
+        // $isi['ujian'] = $this->Model_ujian->detail_mapel($id_jadwal);
+
+
+        $isi['ujian'] = $this->Model_ujian->detail_mapel($id_jadwal, $sess);
+        $this->load->view('Siswa/templates/header');
+        $this->load->view('Siswa/tampilan_detail_ujian', $isi);
+        $this->load->view('Siswa/templates/footer');
+    }
+
+    public function simpan_status_peserta()
+    {
+        $this->require_login();
+        $this->Model_keamanan->getKeamanan();
+        $sess = $this->session->userdata('username');
+
+        $id_jadwal = $this->input->post('id_jadwal');
+        $username = $this->input->post('username');
+        $status = "MENGERJAKAN";
+
+        $data = array(
+            'id_jadwal' => $id_jadwal,
+            'username' => $username,
+            'status' => $status
+        );
+
+        $this->db->insert('siswa_status', $data);
+        redirect('Dashboard_siswa/ujian_siswa/' . $id_jadwal);
+    }
+
+    public function ujian_siswa($id_jadwal)
+    {
+        $this->require_login();
+        $this->Model_keamanan->getKeamanan();
+        $sess = $this->session->userdata('username');
+
+        $isi['siswa'] = $this->Model_ujian->header_ujian_id($id_jadwal, $sess);
+        // $isi['ujian'] = $this->Model_ujian->soal_ujian_id($id_jadwal, $sess);
+        $isi['soal'] = $this->Model_ujian->soal_ujian_id_username($id_jadwal, $sess);
+
+        $this->load->view('Siswa/templates/header');
+        $this->load->view('Siswa/tampilan_soal_ujian', $isi);
+        $this->load->view('Siswa/templates/footer');
+    }
+
+    public function simpan_jawaban()
+    {
+        $this->require_login();
+        // expect answers as array: jawaban[<id_soal>] = 'A'|'B'|...
+        $jawaban = $this->input->post('jawaban');
+        $username = $this->session->userdata('username');
+        $id_mapel = $this->input->post('id_mapel');
+
+
+        if (!empty($jawaban) && is_array($jawaban)) {
+            $batch = array();
+            foreach ($jawaban as $id_soal => $pil) {
+                // sanitize basic
+                $id_soal = intval($id_soal);
+                $pil = substr($this->db->escape_str($pil), 0, 1);
+                $batch[] = array(
+                    'username' => $username,
+                    'soal_id' => $id_soal,
+                    'jawaban' => $pil,
+                    'id_mapel' => $id_mapel
+
+                );
+            }
+            if (count($batch) > 0) {
+                $this->db->insert_batch('siswa_jawab', $batch);
+            }
+        }
+
+        // keep previous behaviour: destroy session and redirect to home
+
+        $sess = $this->session->userdata('username');
+
+        // Hapus custom session cookie dan data di database
+        $session_id = get_cookie('app_session_id');
+        if ($session_id) {
+            $this->load->model('Session_Model');
+            $this->Session_Model->delete_session($session_id);
+        }
+        delete_cookie('app_session_id', '', '/');
+
+        $data = array(
+            'status' => 'SELESAI'
+        );
+
+        $this->db->where('username', $sess);
+        $this->db->update('siswa_status', $data);
+
+        $this->db->delete('siswa_login', array('username' => $sess));
+        $this->session->sess_destroy();
+        redirect('Siswa_login');
+    }
+
+    public function logout()
+    {
+        // Get session_id dari cookie
+        $session_id = get_cookie('app_session_id');
+
+        if ($session_id) {
+            // Hapus session dari database berdasarkan session_id
+            $this->Session_Model->delete_session($session_id);
+        }
+
+        // Hapus cookie
+        delete_cookie('app_session_id', '', '/');
+
+        // Hapus session CodeIgniter
+        $this->session->sess_destroy();
+
+        // Redirect ke login
+        redirect('Siswa_login');
+    }
+}

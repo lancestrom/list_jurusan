@@ -23,12 +23,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+//$config['base_url'] = 'http://project.cbt.smkth-jakbar.com/cbt2.5/';
 $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
-
-
-// $config['base_url'] = 'http://project.cbt.smkth-jakbar.com/list_jurusan/';
 
 /*
 |--------------------------------------------------------------------------
@@ -331,16 +329,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/userguide3/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
-
-/*
-|--------------------------------------------------------------------------
-| External service URLs (project-specific)
-|--------------------------------------------------------------------------
-| Keep external endpoints configurable so views/controllers don't hard-code
-| remote addresses. Example used by `application/views/welcome_message.php`.
-*/
-$config['cbt_url'] = 'http://103.103.23.240/cbt2.5/';
+$config['encryption_key'] = 'aku_cinta_th_jakbar_center_of_excelent';
 
 /*
 |--------------------------------------------------------------------------
@@ -398,10 +387,10 @@ $config['cbt_url'] = 'http://103.103.23.240/cbt2.5/';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
+$config['sess_cookie_name'] = 'cbt25_session';
 $config['sess_samesite'] = 'Lax';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_save_path'] = null;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;

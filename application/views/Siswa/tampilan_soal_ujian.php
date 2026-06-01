@@ -16,7 +16,7 @@
                         <div class="mt-3">
                             <div style="font-size: 0.9em;">Sisa Waktu</div>
                             <div style="font-size: 2em; font-weight: bold; color: #ffd700;" id="examTimeDisplayHeader">
-                                120:00</div>
+                                30:00</div>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="small">
                             <span><strong></strong></span> |
-                            <span>Total: <strong id="examTimeDisplay">120:00</strong></span>
+                            <span>Total: <strong id="examTimeDisplay">30:00</strong></span>
                         </div>
                     </div>
                 </div>
@@ -332,13 +332,13 @@
         const USERNAME = "<?= $siswa['username'] ?>";
 
         // ==================== CONFIGURATION ====================
-        const DELAY_BETWEEN_QUESTIONS = 120; // Disamakan dengan tampilan (10 detik)
+        const DELAY_BETWEEN_QUESTIONS = 30; // Disamakan dengan tampilan (10 detik)
         const STORAGE_KEY_ANSWERS = `exam_answers_${USERNAME}_${EXAM_ID}`;
         const STORAGE_KEY_START_TIME = `exam_start_time_${USERNAME}_${EXAM_ID}`;
         const STORAGE_KEY_TIME_REMAINING = `exam_time_remaining_${USERNAME}_${EXAM_ID}`;
         const STORAGE_KEY_LAST_QUESTION = `last_question_index_${USERNAME}_${EXAM_ID}`;
         const STORAGE_KEY_WAIT_UNTIL = `exam_wait_until_${USERNAME}_${EXAM_ID}`;
-        const EXAM_DURATION_SECONDS = 120 * 60; // Durasi ujian 2 jam (hardcoded)
+        const EXAM_DURATION_SECONDS = 30 * 60; // Durasi ujian 2 jam (hardcoded)
 
         // ==================== STATE ====================
         let currentQuestionIndex = 0;
